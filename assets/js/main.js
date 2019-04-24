@@ -1,19 +1,4 @@
-/*!
 
- =========================================================
- * Material Bootstrap Wizard - v1.0.2
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-bootstrap-wizard
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/material-bootstrap-wizard/blob/master/LICENSE.md)
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- */
-
-// Material Bootstrap Wizard Functions
 
 var searchVisible = 0;
 var transparent = true;
@@ -23,32 +8,6 @@ $(document).ready(function(){
 
     $.material.init();
 
-    /*  Activate the tooltips      */
-    $('[rel="tooltip"]').tooltip();
-
-    // Code for the Validator
-    var $validator = $('.wizard-card form').validate({
-		  rules: {
-		    firstname: {
-		      required: true,
-		      minlength: 3
-		    },
-		    lastname: {
-		      required: true,
-		      minlength: 3
-		    },
-		    email: {
-		      required: true,
-		      minlength: 3,
-		    }
-        },
-
-        errorPlacement: function(error, element) {
-            $(element).parent('div').addClass('has-error');
-         }
-	});
-
-    // Wizard Initialization
   	$('.wizard-card').bootstrapWizard({
         'tabClass': 'nav nav-pills',
         'nextSelector': '.btn-next',
@@ -126,60 +85,6 @@ $(document).ready(function(){
         }
   	});
 
-
-    // Prepare the preview for profile picture
-    $("#wizard-picture").change(function(){
-        readURL(this);
-    });
-
-    $('[data-toggle="wizard-radio"]').click(function(){
-        wizard = $(this).closest('.wizard-card');
-        wizard.find('[data-toggle="wizard-radio"]').removeClass('active');
-        $(this).addClass('active');
-        $(wizard).find('[type="radio"]').removeAttr('checked');
-        $(this).find('[type="radio"]').attr('checked','true');
-    });
-
-    $('[data-toggle="wizard-checkbox"]').click(function(){
-        if( $(this).hasClass('active')){
-            $(this).removeClass('active');
-            $(this).find('[type="checkbox"]').removeAttr('checked');
-        } else {
-            $(this).addClass('active');
-            $(this).find('[type="checkbox"]').attr('checked','true');
-        }
-    });
-
-    $('.set-full-height').css('height', 'auto');
-
-});
-
-
-
- //Function to show image before upload
-
-function readURL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-
-        reader.onload = function (e) {
-            $('#wizardPicturePreview').attr('src', e.target.result).fadeIn('slow');
-        }
-        reader.readAsDataURL(input.files[0]);
-    }
-}
-
-$(window).resize(function(){
-    $('.wizard-card').each(function(){
-        $wizard = $(this);
-
-        index = $wizard.bootstrapWizard('currentIndex');
-        refreshAnimation($wizard, index);
-
-        $('.moving-tab').css({
-            'transition': 'transform 0s'
-        });
-    });
 });
 
 function refreshAnimation($wizard, index){
@@ -225,34 +130,3 @@ function refreshAnimation($wizard, index){
 
     });
 }
-
-materialDesign = {
-
-    checkScrollForTransparentNavbar: debounce(function() {
-                if($(document).scrollTop() > 260 ) {
-                    if(transparent) {
-                        transparent = false;
-                        $('.navbar-color-on-scroll').removeClass('navbar-transparent');
-                    }
-                } else {
-                    if( !transparent ) {
-                        transparent = true;
-                        $('.navbar-color-on-scroll').addClass('navbar-transparent');
-                    }
-                }
-        }, 17)
-
-}
-
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		clearTimeout(timeout);
-		timeout = setTimeout(function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		}, wait);
-		if (immediate && !timeout) func.apply(context, args);
-	};
-};
