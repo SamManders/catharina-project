@@ -15,7 +15,7 @@
   margin: 30px 0 30px;
 
 }
-.wizard-card {
+.app-card {
   width: 100%;
 }
 
@@ -40,7 +40,7 @@
   }
 }
 
-.wizard-navigation{
+.app-navigation{
   position: relative; left: 50%;
   transform: translateX(-50%);
   width: 78px;
@@ -52,7 +52,7 @@
 .nav-pills > li > a{
   min-width: 0!important;
 }
-.wizard-card .moving-tab {
+.app-card .moving-tab {
   background-color: #8BA0CF!important;
   border-radius: 50%;
   width: 15px!important;
@@ -215,9 +215,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     background: linear-gradient(#7784E0, #4250BB);
 }
 
-.wizard-container {
+.app-container {
   z-index: 3; }
-  .wizard-container .wizard-navigation {
+  .app-container .app-navigation {
     position: relative; }
 
 h1, .h1 {
@@ -289,11 +289,11 @@ h2.title {
   color: rgba(0,0,0, 0.87);
   background: #fff; }
 
-  .wizard-card .picture-container {
+  .app-card .picture-container {
     position: relative;
     cursor: pointer;
     text-align: center; }
-  .wizard-card .picture {
+  .app-card .picture {
     width: 106px;
     height: 106px;
     background-color: #999999;
@@ -304,89 +304,89 @@ h2.title {
     overflow: hidden;
     transition: all 0.2s;
     -webkit-transition: all 0.2s; }
-    .wizard-card .picture:hover {
+    .app-card .picture:hover {
       border-color: #2ca8ff; }
-  .wizard-card[data-color="purple"] .moving-tab {
+  .app-card[data-color="purple"] .moving-tab {
     background-color: #9c27b0;
     box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2); }
-  .wizard-card[data-color="purple"] .picture:hover {
+  .app-card[data-color="purple"] .picture:hover {
     border-color: #9c27b0; }
-  .wizard-card[data-color="purple"] .choice:hover .icon, .wizard-card[data-color="purple"] .choice.active .icon {
+  .app-card[data-color="purple"] .choice:hover .icon, .app-card[data-color="purple"] .choice.active .icon {
     border-color: #9c27b0;
     color: #9c27b0; }
-  .wizard-card[data-color="purple"] .form-group .form-control {
+  .app-card[data-color="purple"] .form-group .form-control {
     background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2); }
-  .wizard-card[data-color="purple"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  .app-card[data-color="purple"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
     background-color: #9c27b0; }
-  .wizard-card[data-color="purple"] .radio input[type=radio]:checked ~ .check {
+  .app-card[data-color="purple"] .radio input[type=radio]:checked ~ .check {
     background-color: #9c27b0; }
-  .wizard-card[data-color="purple"] .radio input[type=radio]:checked ~ .circle {
+  .app-card[data-color="purple"] .radio input[type=radio]:checked ~ .circle {
     border-color: #9c27b0; }
-  .wizard-card[data-color="green"] .moving-tab {
+  .app-card[data-color="green"] .moving-tab {
     background-color: #4caf50;
     box-shadow: 0 16px 26px -10px rgba(76, 175, 80, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2); }
-  .wizard-card[data-color="green"] .picture:hover {
+  .app-card[data-color="green"] .picture:hover {
     border-color: #4caf50; }
-  .wizard-card[data-color="green"] .choice:hover .icon, .wizard-card[data-color="green"] .choice.active .icon {
+  .app-card[data-color="green"] .choice:hover .icon, .app-card[data-color="green"] .choice.active .icon {
     border-color: #4caf50;
     color: #4caf50; }
-  .wizard-card[data-color="green"] .form-group .form-control {
+  .app-card[data-color="green"] .form-group .form-control {
     background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2); }
-  .wizard-card[data-color="green"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  .app-card[data-color="green"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
     background-color: #4caf50; }
-  .wizard-card[data-color="green"] .radio input[type=radio]:checked ~ .check {
+  .app-card[data-color="green"] .radio input[type=radio]:checked ~ .check {
     background-color: #4caf50; }
-  .wizard-card[data-color="green"] .radio input[type=radio]:checked ~ .circle {
+  .app-card[data-color="green"] .radio input[type=radio]:checked ~ .circle {
     border-color: #4caf50; }
-  .wizard-card[data-color="blue"] .moving-tab {
+  .app-card[data-color="blue"] .moving-tab {
     background-color: #00bcd4;
     box-shadow: 0 16px 26px -10px rgba(0, 188, 212, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2); }
-  .wizard-card[data-color="blue"] .picture:hover {
+  .app-card[data-color="blue"] .picture:hover {
     border-color: #00bcd4; }
-  .wizard-card[data-color="blue"] .choice:hover .icon, .wizard-card[data-color="blue"] .choice.active .icon {
+  .app-card[data-color="blue"] .choice:hover .icon, .app-card[data-color="blue"] .choice.active .icon {
     border-color: #00bcd4;
     color: #00bcd4; }
-  .wizard-card[data-color="blue"] .form-group .form-control {
+  .app-card[data-color="blue"] .form-group .form-control {
     background-image: linear-gradient(#00bcd4, #00bcd4), linear-gradient(#D2D2D2, #D2D2D2); }
-  .wizard-card[data-color="blue"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  .app-card[data-color="blue"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
     background-color: #00bcd4; }
-  .wizard-card[data-color="blue"] .radio input[type=radio]:checked ~ .check {
+  .app-card[data-color="blue"] .radio input[type=radio]:checked ~ .check {
     background-color: #00bcd4; }
-  .wizard-card[data-color="blue"] .radio input[type=radio]:checked ~ .circle {
+  .app-card[data-color="blue"] .radio input[type=radio]:checked ~ .circle {
     border-color: #00bcd4; }
-  .wizard-card[data-color="orange"] .moving-tab {
+  .app-card[data-color="orange"] .moving-tab {
     background-color: #ff9800;
     box-shadow: 0 16px 26px -10px rgba(255, 152, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 152, 0, 0.2); }
-  .wizard-card[data-color="orange"] .picture:hover {
+  .app-card[data-color="orange"] .picture:hover {
     border-color: #ff9800; }
-  .wizard-card[data-color="orange"] .choice:hover .icon, .wizard-card[data-color="orange"] .choice.active .icon {
+  .app-card[data-color="orange"] .choice:hover .icon, .app-card[data-color="orange"] .choice.active .icon {
     border-color: #ff9800;
     color: #ff9800; }
-  .wizard-card[data-color="orange"] .form-group .form-control {
+  .app-card[data-color="orange"] .form-group .form-control {
     background-image: linear-gradient(#ff9800, #ff9800), linear-gradient(#D2D2D2, #D2D2D2); }
-  .wizard-card[data-color="orange"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  .app-card[data-color="orange"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
     background-color: #ff9800; }
-  .wizard-card[data-color="orange"] .radio input[type=radio]:checked ~ .check {
+  .app-card[data-color="orange"] .radio input[type=radio]:checked ~ .check {
     background-color: #ff9800; }
-  .wizard-card[data-color="orange"] .radio input[type=radio]:checked ~ .circle {
+  .app-card[data-color="orange"] .radio input[type=radio]:checked ~ .circle {
     border-color: #ff9800; }
-  .wizard-card[data-color="red"] .moving-tab {
+  .app-card[data-color="red"] .moving-tab {
     background-color: #f44336;
     box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2); }
-  .wizard-card[data-color="red"] .picture:hover {
+  .app-card[data-color="red"] .picture:hover {
     border-color: #f44336; }
-  .wizard-card[data-color="red"] .choice:hover .icon, .wizard-card[data-color="red"] .choice.active .icon {
+  .app-card[data-color="red"] .choice:hover .icon, .app-card[data-color="red"] .choice.active .icon {
     border-color: #f44336;
     color: #f44336; }
-  .wizard-card[data-color="red"] .form-group .form-control {
+  .app-card[data-color="red"] .form-group .form-control {
     background-image: linear-gradient(#f44336, #f44336), linear-gradient(#D2D2D2, #D2D2D2); }
-  .wizard-card[data-color="red"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  .app-card[data-color="red"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
     background-color: #f44336; }
-  .wizard-card[data-color="red"] .radio input[type=radio]:checked ~ .check {
+  .app-card[data-color="red"] .radio input[type=radio]:checked ~ .check {
     background-color: #f44336; }
-  .wizard-card[data-color="red"] .radio input[type=radio]:checked ~ .circle {
+  .app-card[data-color="red"] .radio input[type=radio]:checked ~ .circle {
     border-color: #f44336; }
-  .wizard-card .picture input[type="file"] {
+  .app-card .picture input[type="file"] {
     cursor: pointer;
     display: block;
     height: 100%;
@@ -395,29 +395,29 @@ h2.title {
     position: absolute;
     top: 0;
     width: 100%; }
-  .wizard-card .picture-src {
+  .app-card .picture-src {
     width: 100%; }
-  .wizard-card .tab-content {
+  .app-card .tab-content {
     min-height: 340px;
     padding: 20px 15px; }
-  .wizard-card .wizard-footer {
+  .app-card .app-footer {
     padding: 0 15px; }
-    .wizard-card .wizard-footer .checkbox {
+    .app-card .app-footer .checkbox {
       margin-top: 16px; }
-  .wizard-card .disabled {
+  .app-card .disabled {
     display: none; }
-  .wizard-card .wizard-header {
+  .app-card .wizard-header {
     text-align: center;
     padding: 25px 0 35px; }
-    .wizard-card .wizard-header h5 {
+    .app-card .wizard-header h5 {
       margin: 5px 0 0; }
-  .wizard-card .nav-pills > li {
+  .app-card .nav-pills > li {
     text-align: center; }
-  .wizard-card .choice {
+  .app-card .choice {
     text-align: center;
     cursor: pointer;
     margin-top: 20px; }
-    .wizard-card .choice .icon {
+    .app-card .choice .icon {
       text-align: center;
       vertical-align: middle;
       height: 116px;
@@ -428,22 +428,22 @@ h2.title {
       border: 4px solid #CCCCCC;
       transition: all 0.2s;
       -webkit-transition: all 0.2s; }
-    .wizard-card .choice i {
+    .app-card .choice i {
       font-size: 40px;
       line-height: 111px; }
-    .wizard-card .choice:hover .icon, .wizard-card .choice.active .icon {
+    .app-card .choice:hover .icon, .app-card .choice.active .icon {
       border-color: #2ca8ff; }
-    .wizard-card .choice input[type="radio"],
-    .wizard-card .choice input[type="checkbox"] {
+    .app-card .choice input[type="radio"],
+    .app-card .choice input[type="checkbox"] {
       position: absolute;
       left: -10000px;
       z-index: -1; }
-  .wizard-card .btn-finish {
+  .app-card .btn-finish {
     display: none; }
-  .wizard-card .description {
+  .app-card .description {
     color: #999999;
     font-size: 14px; }
-  .wizard-card .wizard-title {
+  .app-card .wizard-title {
     margin: 0; }
 
 legend {
